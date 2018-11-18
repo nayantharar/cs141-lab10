@@ -13,7 +13,6 @@ public:
 	//properties
 
         double b;
-
 	double l;
          
 double area;(double l,double b)
@@ -40,7 +39,50 @@ cout<<"enter the length and breadth of rectangle 1"<<endl;
 cin>> r1.l;
 cin>> r1.b;
 perimeter1=r1.perimeter(r1.l;r1.b);
-	 
+area1=r1.area(r1.len,r1.bre);
+
+ 
+
+  cout<<"Enter the length and breadth of rectangle 2"<<endl;
+  cin>>r2.len;
+  cin>>r2.bre;
+  perimeter2=r2.perimeter(r2.len,r2.bre);
+  area2=r2.area(r2.len,r2.bre);
+
+  cout<<"Area of rectangle 1 is "<<area1<<endl;
+  cout<<"Area of rectangle 2 is "<<area2<<endl;
+  cout<<"Perimeter of rectangle 1 is "<<perimeter1<<endl;
+  cout<<"Perimeter of rectangle 2 is "<<perimeter2<<endl;
+
+ 
+
+  {
+  if(perimeter1 > perimeter2) 
+  cout<<"Rectangle 1 has larger perimeter"<<endl;
+
+  else if(perimeter2 > perimeter1)
+  cout<<"Rectangle 2 has larger perimeter"<<endl;
+
+  else if(perimeter1==perimeter2)
+  cout<<"Both the rectangles have equal perimeter"<<endl;
+  }
+
+
+
+ {
+ if(area1 > area2) 
+ cout<<"Rectangle 1 has larger area"<<endl;
+
+ else if(area2 > area1)
+ cout<<"Rectangle 2 has larger area"<<endl;
+
+ else if(area1==area2)
+ cout<<"Both the rectangles have equal perimeter"<<endl;
+ }
+
+  return 0;
+
+}
 
 
 
@@ -62,52 +104,3 @@ perimeter1=r1.perimeter(r1.l;r1.b);
 
 
 
-
-
-
-
-
-
-
-
-
-// declaing variables
-	int x , y , q , p ;
-	rect Rectangle1;
-	rect Rectangle2;
-	//assinging values tproperties of bjects in class , inputs
-	cout<< "enter dimensions of Rectangle1"<<endl;
-	cin>>Rectangle1.l;
-	cout<<endl;
-	cin>>Rectangle1.b;
-	
-	cout<<endl<<endl<<endl;
-	
-	cout<< "enter dimensions of Rectangle2"<<endl;
-	cin>>Rectangle2.b;
-	cout<<endl;
-	cin>>Rectangle2.l;
-
-	cout<<endl<<endl<<endl;
-
-	x=Rectangle1.getAr();
-	y=Rectangle2.getAr();
-	q=Rectangle1.getPer();
-	p=Rectangle2.getPer();
-	
-	//cmparing twoo rectangles
-	if(x!=y){
-		cout<<max(x,y)<<"has larger area of the two";
-
-		}
-	else{
-		cout<<"Both have equal areas"<<endl<<endl;
-		}
-	if(p!=q){
-		cout<<max(q,p)<<"has maximum perimeter"<<endl<<endl;
-		}
-	else{
-		cout<<"Both have equal boundry length"<<endl<<endl;
-		}
-	return 0;
-} 
